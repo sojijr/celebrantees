@@ -1,28 +1,35 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #F0F1F9;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #0A0908;
 }
 
 form {
     max-width: 400px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #2274A5;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
 }
 
 label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
+    color: #0A0908;
 }
 
 input[type="text"],
@@ -37,7 +44,7 @@ input[type="file"] {
 }
 
 input[type="submit"] {
-    background-color: #007BFF;
+    background-color: #EFC11A;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -47,5 +54,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #F4D35E;
 }
