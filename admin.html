@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celebrantees</title>
+    <title>Celebrantees: Admin</title>
     <link href="https://fonts.googleapis.com/css2?family=Satoshi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Tell us when your birthday is</h1>
+    <h1>Admin</h1>
     <form action="#" method="POST" enctype="multipart/form-data">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <label for="username">Username:</label>
+        <input type="text" id="userName" name="userName" required>
         
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday" required>
-        
-        <label for="picture">Upload Picture:</label>
-        <input type="file" id="picture" name="picture" accept="image/*" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
 
         <input type="submit" value="Submit">
     </form>
