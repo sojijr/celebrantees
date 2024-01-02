@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Satoshi', sans-serif;
     background-color: #F0F1F9;
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ h1 {
 form {
     max-width: 400px;
     margin: 0 auto;
-    background-color: #2274A5;
+    background-color: #3843d0;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -29,7 +29,7 @@ label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
-    color: #0A0908;
+    color: #fff;
 }
 
 input[type="text"],
@@ -39,12 +39,14 @@ input[type="file"] {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
+    background-color: #fff;
     border-radius: 4px;
     font-size: 16px;
+    opacity: 0.9;
 }
 
 input[type="submit"] {
-    background-color: #EFC11A;
+    background-color: #FFC466;
     color: #fff;
     padding: 10px 20px;
     border: none;
