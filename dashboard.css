@@ -77,7 +77,7 @@
     display: block;
 }
 
-.month-box-body {
+.month-box-body, .change-password-box {
     margin-top: 70px;
 }
 
