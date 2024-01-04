@@ -13,8 +13,30 @@
 </head>
 
 <body>
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#" class="active"><i class="fas fa-home"></i> DASHBOARD</a></li>
+            <li><a href="#"><i class="fas fa-calendar"></i> JANUARY</a></li>
+            <li><a href="#"><i class="fas fa-calendar"></i> FEBUARY</a></li>
+            <li><a href="#"><i class="fas fa-calendar"></i> MARCH</a></li>
+            <li><a href="#"><i class="fas fa-calendar"></i> APRIL</a></li>
+            <li><a href="#"><i class="fas fa-calendar"></i> MAY</a></li>
+            <li><a href="#"><i class="fas fa-calendar"></i> JUNE</a></li>
+            <li><a href="#"><i class="fas fa-calendar"></i> JULY</a></li>
+            <li><a href="#"><i class="fas fa-calendar"></i> AUGUST</a></li>
+            <li><a href="#"><i class="fas fa-calendar"></i> SEPTEMBER</a></li>
+            <li><a href="#"><i class="fas fa-calendar"></i> OCTOBER</a></li>
+            <li><a href="#"><i class="fas fa-calendar"></i> NOVEMBER</a></li>
+            <li><a href="#"><i class="fas fa-calendar"></i> DECEMBER</a></li>
+        </ul>
+    </nav>
+
+
     <header class="header">
-        <img src="#" alt="School Logo" class="logo">
+        <div class="sidebar-toggle" id="sidebarToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <img src="#" alt="Logo" class="logo">
         <div class="admin-info">
             <span class="admin-name">John Doe</span>
             <div class="dropdown">
@@ -30,99 +52,27 @@
         </div>
     </header>
 
-    <div class="month-box-body">
-    <div class="row">
-        <div class="column">
-            <div class="month-box" id="month-box">
-                <h2 class="month-box-heading">JANUARY</h2>
-                <p class="month-box-timestamp">Last Updated: 2024-01-04 15:30:45</p>
-            </div>
-        </div>
-    
-        <div class="column">
-            <div class="month-box" id="month-box">
-                <h2 class="month-box-heading">FEBRUARY</h2>
-                <p class="month-box-timestamp">Last Updated: 2024-01-04 15:30:45</p>
-            </div>
-        </div>
-    
-        <div class="column">
-            <div class="month-box" id="month-box">
-                <h2 class="month-box-heading">MARCH</h2>
-                <p class="month-box-timestamp">Last Updated: 2024-01-04 15:30:45</p>
-            </div>
-        </div>
-    
-        <div class="column">
-            <div class="month-box" id="month-box">
-                <h2 class="month-box-heading">APRIL</h2>
-                <p class="month-box-timestamp">Last Updated: 2024-01-04 15:30:45</p>
-            </div>
-        </div>
+    <div class="notification-box" id="notification-box">
+        <h2 class="notification-heading">NOTIFICATION</h2>
+        <table class="timetable">
+            <thead>
+                <tr>
+                    <th>Recent Activities</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="notification-title">Notification 1</td>
+                </tr>
+                <tr>
+                    <td class="notification-title">Notification 2</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    
-    <div class="row">
-        <div class="column">
-            <div class="month-box" id="month-box">
-                <h2 class="month-box-heading">MAY</h2>
-                <p class="month-box-timestamp">Last Updated: 2024-01-04 15:30:45</p>
-            </div>
-        </div>
-    
-        <div class="column">
-            <div class="month-box" id="month-box">
-                <h2 class="month-box-heading">JUNE</h2>
-                <p class="month-box-timestamp">Last Updated: 2024-01-04 15:30:45</p>
-            </div>
-        </div>
-    
-        <div class="column">
-            <div class="month-box" id="month-box">
-                <h2 class="month-box-heading">JULY</h2>
-                <p class="month-box-timestamp">Last Updated: 2024-01-04 15:30:45</p>
-            </div>
-        </div>
-    
-        <div class="column">
-            <div class="month-box" id="month-box">
-                <h2 class="month-box-heading">AUGUST</h2>
-                <p class="month-box-timestamp">Last Updated: 2024-01-04 15:30:45</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="column">
-            <div class="month-box" id="month-box">
-                <h2 class="month-box-heading">SEPTEMBER</h2>
-                <p class="month-box-timestamp">Last Updated: 2024-01-04 15:30:45</p>
-            </div>
-        </div>
-    
-        <div class="column">
-            <div class="month-box" id="month-box">
-                <h2 class="month-box-heading">OCTOBER</h2>
-                <p class="month-box-timestamp">Last Updated: 2024-01-04 15:30:45</p>
-            </div>
-        </div>
-    
-        <div class="column">
-            <div class="month-box" id="month-box">
-                <h2 class="month-box-heading">NOVEMBER</h2>
-                <p class="month-box-timestamp">Last Updated: 2024-01-04 15:30:45</p>
-            </div>
-        </div>
-    
-        <div class="column">
-            <div class="month-box" id="month-box">
-                <h2 class="month-box-heading">DECEMBER</h2>
-                <p class="month-box-timestamp">Last Updated: 2024-01-04 15:30:45</p>
-            </div>
-        </div>
-    </div>
-    </div>
-    
-    <!-- <script src="js/dashboard.js"></script> -->
+
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>

@@ -81,35 +81,93 @@ body {
     display: block;
 }
 
-.month-box-body, .change-password-box {
+.body-content, .change-password-box {
     margin-top: 70px;
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    margin: 3px;
+.sidebar {
+    background-color: #3843d0;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 60px;
+    border: 1px solid #fff;
+    bottom: 0;
+    padding-top: 20px;
+    overflow-y: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.column {
-    flex: 1;
-    margin: 5px;
+.sidebar-toggle {
+    display: none;
 }
 
-.month-box {
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 7px 20px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #FFC466;
+}
+
+.sidebar a.active {
+    background-color: #FFC466;
+  } 
+  
+.sidebar-dropdown {
+    height: 330px;
+    width: 210px;
+  }
+
+.sidebar.finance-sidebar-dropdown {
+    height: 500px;
+    width: 250px;
+}
+
+/* .sidebar .finance-dropdown-sidebar.active{
+    height: 500px;
+    width: 250px;
+} */
+
+.sidebar.sidebar-dropdown.finance-sidebar-dropdown {
+    height: 580px;
+    width: 250px;
+}
+
+.dropdown-sidebar {
+    display: none;
+}
+
+.dropdown-sidebar.active {
+    display: block;
+}
+
+.notification-box {
     background-color: #fff;
+    position: fixed;
+    top: 100px;
+    left: 390px;
     padding: 20px;
-    margin: 10px auto;
-    width: 300px;
-    height: 150px;
+    margin: 20px auto;
+    max-width: 800px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    cursor: pointer;
 }
 
-.month-box-heading {
+.notification-heading {
     font-size: 24px;
     font-weight: bold;
     margin: 0;
@@ -117,20 +175,74 @@ body {
     margin-bottom: 20px;
 }
 
-.month-box-timestamp{
-    font-size: 11px;
-    text-align: right;
-    margin-top: 77px;
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.timetable th,
+.timetable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.timetable th {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #F0F1F9;
+}
+
+.timetable td {
+    font-size: 16px;
+    color: #555;
+}
+
+.notification-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    width: 30%;
+}
+
+.notification-notice {
+    font-size: 16px;
+    color: #555;
+    width: 70%;
 }
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
-    .admin-info {
+    .student-info {
         margin-right: 0;
         justify-content: flex-end;
     }
 
-    .month-box {
+    .sidebar {
+        height: 240px;
+    }
+
+    .sidebar-toggle {
+        display: block;
+        position: fixed;
+        top: 25px;
+        left: 20px;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .sidebar {
+    display: none;
+    }
+
+    .sidebar-active {
+        display: block;
+    }
+
+    .notification-box {
         top: 100px;
         left: 20px;
         padding: 20px;
@@ -138,8 +250,7 @@ body {
         max-width: 90%;
     }
 
-    .month-box-toggle{
+    .notification-box-toggle{
         top: 350px;
     }
-
 }
