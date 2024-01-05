@@ -1,5 +1,6 @@
 body {
     background-color: #F0F1F9;
+    font-family: 'Satoshi', sans-serif;
 }
 
 .header {
@@ -23,13 +24,14 @@ body {
 }
 
 .admin-name {
-    color: white;
+    color: #fff;
     font-size: 18px;
     margin-right: 7px;
 }
 
 .logo {
-    max-width: 100px;
+    width: 60px;
+    height: 40px;
     margin-left: 20px;
 }
 
@@ -40,7 +42,7 @@ body {
 
 .dropbtn {
     background-color: transparent;
-    color: white;
+    color: #fff;
     border: none;
     cursor: pointer;
     padding: 0;
@@ -59,7 +61,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #090e53;
+    background-color: #3843d0;
     min-width: 160px;
     right: 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -67,14 +69,14 @@ body {
 }
 
 .dropdown-content a {
-    color: white;
+    color: #fff;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #0e1581;
+    background-color: #FFC466;
 }
 
 .dropdown:hover .dropdown-content {
@@ -92,7 +94,7 @@ body {
     height: 100%;
     position: fixed;
     top: 60px;
-    border: 1px solid #fff;
+    border-top: 1px solid #fff;
     bottom: 0;
     padding-top: 20px;
     overflow-y: auto;
@@ -116,6 +118,7 @@ body {
     text-decoration: none;
     color: #fff;
     display: block;
+    border-radius: 3px;
 }
 
 .sidebar a:hover {
@@ -135,11 +138,6 @@ body {
     height: 500px;
     width: 250px;
 }
-
-/* .sidebar .finance-dropdown-sidebar.active{
-    height: 500px;
-    width: 250px;
-} */
 
 .sidebar.sidebar-dropdown.finance-sidebar-dropdown {
     height: 580px;
@@ -214,9 +212,15 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
-    .student-info {
+    .admin-info {
         margin-right: 0;
         justify-content: flex-end;
+    }
+
+    .logo{
+        position: relative;
+        top: 10px;
+        margin-left: 30px;
     }
 
     .sidebar {
