@@ -5,6 +5,7 @@ body {
 
 .header {
     background-color: #3843d0;
+    border-bottom: 1px solid #FFC466;
     color: #fff;
     padding: 10px 20px;
     position: fixed;
@@ -94,7 +95,6 @@ body {
     height: 100%;
     position: fixed;
     top: 60px;
-    border-top: 1px solid #fff;
     bottom: 0;
     padding-top: 20px;
     overflow-y: auto;
@@ -210,6 +210,33 @@ body {
     width: 70%;
 }
 
+.month-box, .month-box-2 {
+    background-color: #fff;
+    position: fixed;
+    top: -270px;
+    left: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 1080px;
+    height: 1080px;
+    transform: scale(0.333);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.month-box-2 {
+    left: 520px;
+}
+
+.month-box-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+    margin-bottom: 20px;
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .admin-info {
@@ -256,5 +283,20 @@ body {
 
     .notification-box-toggle{
         top: 350px;
+    }
+
+    .month-box, .month-box-2 {
+        width: 90%;
+        height: auto;
+        max-width: 400px;
+        left: 50%;
+        transform: translateX(-50%) scale(1);
+        top: 60px;
+    }
+
+    .month-box-2 {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 200px;
     }
 }

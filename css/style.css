@@ -12,7 +12,8 @@ body {
 
 h1 {
     text-align: center;
-    color: #0A0908;
+    font-size: 30px;
+    color: #ffae2b;
 }
 
 form {
