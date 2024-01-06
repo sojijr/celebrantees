@@ -15,12 +15,46 @@
         <input type="text" id="name" name="name" required>
         
         <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday" required>
+        <select id="month" name="month" onchange="updateDays()">
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+        <select id="date" name="date"></select>
         
         <label for="picture">Upload Picture:</label>
         <input type="file" id="picture" name="picture" accept="image/*" required>
 
-        <input type="submit" value="Submit">
+        <input type="submit" name="submit" value="Submit">
     </form>
+
+    <script>
+        function updateDays() {
+            var monthSelect = document.getElementById('month');
+            var dateSelect = document.getElementById('date');
+            var daysInMonth = new Date(2024, parseInt(monthSelect.value, 10), 0).getDate();
+
+            dateSelect.innerHTML = '';
+    
+            // Generate new options for days
+            for (var i = 1; i <= daysInMonth; i++) {
+                var option = document.createElement('option');
+                option.value = ('0' + i).slice(-2);
+                option.text = i;
+                dateSelect.add(option);
+            }
+        }
+        updateDays();
+    </script>
+
 </body>
 </html>
