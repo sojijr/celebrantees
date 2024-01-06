@@ -312,4 +312,10 @@ input[type="submit"] {
         transform: translateX(-50%);
         top: 200px;
     }
+
+    input[type="submit"] {
+        position: relative;
+        left: auto;
+        width: 100%;
+    }
 }
