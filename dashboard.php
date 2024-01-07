@@ -13,25 +13,41 @@
     <title>Celebrantees: Dashboard</title>
 </head>
 
+<?php
+    $monthLink = "month.php?month=";
+?>
+
 <body>
     <nav class="sidebar" id="sidebar">
         <ul>
-            <li><a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> January</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> Febuary</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> March</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> April</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> May</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> June</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> July</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> August</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> September</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> October</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> November</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> December</a></li>
+            <li><a href="<?php echo $monthLink; ?>" class="active"><i
+                        class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="<?php echo $monthLink; ?>January"><i
+                        class="fas fa-calendar"></i> January</a></li>
+            <li><a href="<?php echo $monthLink; ?>February"><i
+                        class="fas fa-calendar"></i> February</a></li>
+            <li><a href="<?php echo $monthLink; ?>March"><i
+                        class="fas fa-calendar"></i> March</a></li>
+            <li><a href="<?php echo $monthLink; ?>April"><i
+                        class="fas fa-calendar"></i> April</a></li>
+            <li><a href="<?php echo $monthLink; ?>May"><i
+                        class="fas fa-calendar"></i> May</a></li>
+            <li><a href="<?php echo $monthLink; ?>June"><i
+                        class="fas fa-calendar"></i> June</a></li>
+            <li><a href="<?php echo $monthLink; ?>July"><i
+                        class="fas fa-calendar"></i> July</a></li>
+            <li><a href="<?php echo $monthLink; ?>August"><i
+                        class="fas fa-calendar"></i> August</a></li>
+            <li><a href="<?php echo $monthLink; ?>September"><i
+                        class="fas fa-calendar"></i> September</a></li>
+            <li><a href="<?php echo $monthLink; ?>October"><i
+                        class="fas fa-calendar"></i> October</a></li>
+            <li><a href="<?php echo $monthLink; ?>November"><i
+                        class="fas fa-calendar"></i> November</a></li>
+            <li><a href="<?php echo $monthLink; ?>December"><i
+                        class="fas fa-calendar"></i> December</a></li>
         </ul>
     </nav>
-
 
     <header class="header">
         <div class="sidebar-toggle" id="sidebarToggle">
