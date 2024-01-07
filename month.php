@@ -14,24 +14,30 @@
 </head>
 
 <body>
+
     <nav class="sidebar" id="sidebar">
         <ul>
-            <li><a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> January</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> Febuary</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> March</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> April</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> May</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> June</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> July</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> August</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> September</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> October</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> November</a></li>
-            <li><a href="#"><i class="fas fa-calendar"></i> December</a></li>
+            <li><a href="dashboard.php"
+                    <?php echo isActive('Dashboard'); ?>><i
+                        class="fas fa-home"></i> Dashboard</a></li>
+            <?php
+            $monthLink = "month.php?month=";
+
+                    $months = array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+                    foreach ($months as $month) {
+                        echo '<li><a href="' . $monthLink . $month . '" ' . isActive($month) . '><i class="fas fa-calendar"></i> ' . $month . '</a></li>';
+                    }
+                    ?>
         </ul>
     </nav>
 
+    <?php
+function isActive($month)
+{
+    $currentMonth = isset($_GET['month']) ? $_GET['month'] : 'Dashboard';
+    return $currentMonth === $month ? 'class="active"' : '';
+}
+                    ?>
 
     <header class="header">
         <div class="sidebar-toggle" id="sidebarToggle">
