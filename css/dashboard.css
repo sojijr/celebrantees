@@ -1,6 +1,7 @@
 body {
     background-color: #F0F1F9;
     font-family: 'Satoshi', sans-serif;
+    /* zoom: 80%; */
 }
 
 .header {
@@ -213,20 +214,20 @@ body {
 .month-box, .month-box-2 {
     background-color: #fff;
     position: fixed;
-    top: -270px;
-    left: 10px;
+    top: 300px;
+    left: 28%;
     padding: 20px;
     margin: 20px auto;
     width: 1080px;
     height: 1080px;
-    transform: scale(0.333);
+    zoom: 35%;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .month-box-2 {
-    left: 520px;
+    left: 63%;
 }
 
 .month-box-heading {
@@ -252,6 +253,10 @@ input[type="submit"] {
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
+    body {
+        overflow-y: scroll;
+    }
+
     .admin-info {
         margin-right: 0;
         justify-content: flex-end;
@@ -299,18 +304,13 @@ input[type="submit"] {
     }
 
     .month-box, .month-box-2 {
-        width: 90%;
-        height: auto;
-        max-width: 400px;
-        left: 50%;
-        transform: translateX(-50%) scale(1);
-        top: 60px;
+        left: 0%;
+        top: 10%;
     }
 
     .month-box-2 {
-        left: 50%;
-        transform: translateX(-50%);
-        top: 200px;
+        left: 0%;
+        top: 70%;
     }
 
     input[type="submit"] {
